@@ -4,7 +4,7 @@ Aplicación de terminal para averiguar el clima de cualquier parte en el mundo.
 
 ## Visualización 
 
-![Weather App](pictures\app.png)
+![Weather App](./pictures/app.png)
 
 
 ## Instalación
