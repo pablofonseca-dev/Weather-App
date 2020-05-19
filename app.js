@@ -29,14 +29,14 @@ getLocationLatLon(yargs_argv.direccion)
 
 printWeatherData = (weatherObject) => {
     let details = `
-    Descripción de la zona consultada: ${weatherObject.data.name} 
-    Temperatura de la localización: ${weatherObject.data.main.temp}C° 
+    Descripción: ${weatherObject.data.name} 
+    Temperatura: ${weatherObject.data.main.temp}C° 
     Se siente a una temperatura de: ${weatherObject.data.main.feels_like}C°
-    La presión de la zona es de: ${weatherObject.data.main.pressure} 
-    La humedad se encuentra a: ${weatherObject.data.main.humidity}%
-    La latitud de la zona es: ${weatherObject.data.coord.lat}
-    La longitud de la zona es: ${weatherObject.data.coord.lon}
-    El país es la zona es: ${weatherObject.data.sys.country} 
+    Nivel de Presión: ${weatherObject.data.main.pressure} 
+    Humedad: ${weatherObject.data.main.humidity}%
+    Latitud: ${weatherObject.data.coord.lat}
+    Longitud: ${weatherObject.data.coord.lon}
+    Código de País: ${weatherObject.data.sys.country} 
     `.cyan; 
 
     console.log(details);
