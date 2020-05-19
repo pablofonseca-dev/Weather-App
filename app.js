@@ -12,7 +12,13 @@ const {
 
 const colors = require('colors');
 
-getLocationLatLon(yargs_argv.direccion)
+let fullAddress = '';
+
+if(yargs_argv.pais != undefined)
+    fullAddress = `${yargs_argv.ciudad},${yargs_argv.pais}`;
+else
+    fullAddress =  `${yargs_argv.ciudad}`;
+getLocationLatLon(fullAddress)
     .then((result) => {
 
         if(result.addressLat == -9999.000000 || result.addressLon == -9999.000000){

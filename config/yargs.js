@@ -1,10 +1,15 @@
 const yargs_argv = require('yargs')
     .options({
-        direccion: {
-            alias: 'D', 
-            desc: 'Dirección de la que se obtendrá el clima', 
-            demand: true
+        pais: {
+            alias: 'P', 
+            desc: 'País al que pertenece la ciudad.', 
+            demand: false
         }, 
+        ciudad: {
+            alias: 'C', 
+            desc: "Ciudad a la que se le consultará el clima.",
+            demand: true
+        }
     }).argv; 
 
 module.exports = {
