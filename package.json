@@ -1,0 +1,14 @@
+{
+  "name": "app-clima",
+  "version": "1.0.0",
+  "description": "Aplicación para averiguar el clima de cualquier parte en el mundo. ",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pablo Fonseca",
+  "license": "MIT",
+  "dependencies": {
+    "yargs": "^15.3.1"
+  }
+}
