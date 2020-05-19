@@ -9,6 +9,8 @@
   "author": "Pablo Fonseca",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.19.2",
+    "colors": "^1.4.0",
     "yargs": "^15.3.1"
   }
 }
